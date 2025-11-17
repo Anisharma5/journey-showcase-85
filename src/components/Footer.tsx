@@ -28,7 +28,7 @@ export const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/_.sakshii_sharma._?igsh=MWN6aWlmM3gyMGtscw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors"
@@ -45,7 +45,7 @@ export const Footer = () => {
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export const Footer = () => {
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -144,9 +144,9 @@ export const Footer = () => {
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  123 Adventure Lane
+                  The Uphill Diaries
                   <br />
-                  San Francisco, CA 94102
+                  The Mall Shimla, Himachal Pradesh 171001
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -155,16 +155,16 @@ export const Footer = () => {
                   href="tel:+14155551234"
                   className="text-sm text-muted-foreground hover:text-accent transition-colors"
                 >
-                  +1 (415) 555-1234
+                  +91 7876887463
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent flex-shrink-0" />
                 <a
-                  href="mailto:hello@Uphill diaries.com"
+                  href="mailto:sakshi1512002@gmail.com"
                   className="text-sm text-muted-foreground hover:text-accent transition-colors"
                 >
-                  hello@Uphill diaries.com
+                  sakshi1512002@gmail.com
                 </a>
               </li>
             </ul>

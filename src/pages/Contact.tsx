@@ -118,10 +118,10 @@ const Contact = () => {
                       Email Us
                     </h3>
                     <a
-                      href="mailto:hello@Uphill diaries.com"
+                      href="mailto:sakshi1512002@gmail.com"
                       className="text-sm text-muted-foreground hover:text-accent transition-colors"
                     >
-                      hello@Uphill diaries.com
+                      sakshi1512002@gmail.com
                     </a>
                     <p className="text-xs text-muted-foreground mt-1">
                       We respond within 24 hours
@@ -163,7 +163,7 @@ const Contact = () => {
                   >
                     <Facebook className="h-5 w-5" />
                   </a>
-                  <a
+                  {/* <a
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -171,7 +171,7 @@ const Contact = () => {
                     aria-label="Twitter"
                   >
                     <Twitter className="h-5 w-5" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

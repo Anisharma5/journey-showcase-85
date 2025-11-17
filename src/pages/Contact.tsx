@@ -155,7 +155,7 @@ const Contact = () => {
                     <Instagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/profile.php?id=100064672274731"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-white transition-colors"

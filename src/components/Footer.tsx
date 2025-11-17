@@ -1,5 +1,13 @@
-import { Link } from 'react-router-dom';
-import { Compass, Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  Compass,
+  Facebook,
+  Instagram,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -10,10 +18,13 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Compass className="h-8 w-8 text-accent" />
-              <span className="text-2xl font-bold text-primary">Wanderlust</span>
+              <span className="text-2xl font-bold text-primary">
+                Uphill diaries
+              </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Curating transformative journeys that connect you to the world's most extraordinary places and cultures.
+              Curating transformative journeys that connect you to the world's
+              most extraordinary places and cultures.
             </p>
             <div className="flex gap-4">
               <a
@@ -51,22 +62,34 @@ export const Footer = () => {
             <h3 className="text-sm font-semibold text-primary mb-4">Explore</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/destinations" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/destinations"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   All Destinations
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/about"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   Our Story
                 </Link>
               </li>
               <li>
-                <Link to="/about#team" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/about#team"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   Meet the Team
                 </Link>
               </li>
               <li>
-                <Link to="/about#sustainability" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/about#sustainability"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   Sustainability
                 </Link>
               </li>
@@ -78,22 +101,34 @@ export const Footer = () => {
             <h3 className="text-sm font-semibold text-primary mb-4">Support</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/contact" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/contact"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <a href="#faq" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <a
+                  href="#faq"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   FAQs
                 </a>
               </li>
               <li>
-                <a href="#travel-tips" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <a
+                  href="#travel-tips"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   Travel Tips
                 </a>
               </li>
               <li>
-                <a href="#privacy" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <a
+                  href="#privacy"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   Privacy Policy
                 </a>
               </li>
@@ -102,24 +137,34 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-primary mb-4">Get In Touch</h3>
+            <h3 className="text-sm font-semibold text-primary mb-4">
+              Get In Touch
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  123 Adventure Lane<br />San Francisco, CA 94102
+                  123 Adventure Lane
+                  <br />
+                  San Francisco, CA 94102
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent flex-shrink-0" />
-                <a href="tel:+14155551234" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <a
+                  href="tel:+14155551234"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
                   +1 (415) 555-1234
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent flex-shrink-0" />
-                <a href="mailto:hello@wanderlust.com" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  hello@wanderlust.com
+                <a
+                  href="mailto:hello@Uphill diaries.com"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
+                  hello@Uphill diaries.com
                 </a>
               </li>
             </ul>
@@ -128,7 +173,8 @@ export const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border/40 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Wanderlust Travel. All rights reserved. | Crafted with passion for explorers.
+            © {new Date().getFullYear()} Uphill diaries Travel. All rights
+            reserved. | Crafted with passion for explorers.
           </p>
         </div>
       </div>

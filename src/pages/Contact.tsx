@@ -1,21 +1,35 @@
-import { useState } from 'react';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Card } from '@/components/ui/card';
-import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, Send } from 'lucide-react';
-import { toast } from '@/hooks/use-toast';
+import { useState } from "react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Card } from "@/components/ui/card";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+  Facebook,
+  Twitter,
+  Send,
+} from "lucide-react";
+import { toast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -24,13 +38,13 @@ const Contact = () => {
       title: "Thank you for reaching out!",
       description: "We'll get back to you within 24 hours.",
     });
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative py-24 bg-primary/5">
         <div className="container px-4">
@@ -40,7 +54,8 @@ const Contact = () => {
               Let's Plan Your Journey
             </h1>
             <p className="text-xl text-muted-foreground">
-              Have questions? Want to customize an itinerary? We're here to help turn your travel dreams into reality.
+              Have questions? Want to customize an itinerary? We're here to help
+              turn your travel dreams into reality.
             </p>
           </div>
         </div>
@@ -53,9 +68,13 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-primary mb-6">Get In Touch</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6">
+                  Get In Touch
+                </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Whether you're dreaming of your first adventure or planning your tenth, our travel specialists are ready to help you craft the perfect journey.
+                  Whether you're dreaming of your first adventure or planning
+                  your tenth, our travel specialists are ready to help you craft
+                  the perfect journey.
                 </p>
               </div>
 
@@ -63,11 +82,15 @@ const Contact = () => {
                 <Card className="p-6 border-border/50 flex items-start gap-4">
                   <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Visit Us</h3>
+                    <h3 className="font-semibold text-primary mb-1">
+                      Visit Us
+                    </h3>
                     <p className="text-sm text-muted-foreground">
-                      123 Adventure Lane<br />
-                      San Francisco, CA 94102<br />
-                      United States
+                      The Uphill Diaries
+                      <br />
+                      The Mall Shimla, Himachal Pradesh 171001
+                      <br />
+                      India
                     </p>
                   </div>
                 </Card>
@@ -76,14 +99,14 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-primary mb-1">Call Us</h3>
-                    <a 
-                      href="tel:+14155551234" 
+                    <a
+                      href="tel:+14155551234"
                       className="text-sm text-muted-foreground hover:text-accent transition-colors"
                     >
-                      +1 (415) 555-1234
+                      +91 7876887463
                     </a>
                     <p className="text-xs text-muted-foreground mt-1">
-                      Mon-Fri: 9AM - 6PM PST
+                      Mon-Fri: 9AM - 6PM IST
                     </p>
                   </div>
                 </Card>
@@ -91,12 +114,14 @@ const Contact = () => {
                 <Card className="p-6 border-border/50 flex items-start gap-4">
                   <Mail className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Email Us</h3>
-                    <a 
-                      href="mailto:hello@wanderlust.com" 
+                    <h3 className="font-semibold text-primary mb-1">
+                      Email Us
+                    </h3>
+                    <a
+                      href="mailto:hello@Uphill diaries.com"
                       className="text-sm text-muted-foreground hover:text-accent transition-colors"
                     >
-                      hello@wanderlust.com
+                      hello@Uphill diaries.com
                     </a>
                     <p className="text-xs text-muted-foreground mt-1">
                       We respond within 24 hours
@@ -116,7 +141,9 @@ const Contact = () => {
 
               {/* Social Media */}
               <div>
-                <h3 className="font-semibold text-primary mb-4">Follow Our Adventures</h3>
+                <h3 className="font-semibold text-primary mb-4">
+                  Follow Our Adventures
+                </h3>
                 <div className="flex gap-4">
                   <a
                     href="https://instagram.com"
@@ -152,14 +179,18 @@ const Contact = () => {
             {/* Contact Form */}
             <div id="form">
               <Card className="p-8 border-border/50">
-                <h2 className="text-2xl font-bold text-primary mb-6">Send Us a Message</h2>
+                <h2 className="text-2xl font-bold text-primary mb-6">
+                  Send Us a Message
+                </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Your Name</Label>
                     <Input
                       id="name"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       required
                       placeholder="John Doe"
                     />
@@ -171,7 +202,9 @@ const Contact = () => {
                       id="email"
                       type="email"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       required
                       placeholder="john@example.com"
                     />
@@ -181,17 +214,23 @@ const Contact = () => {
                     <Label htmlFor="subject">Subject</Label>
                     <Select
                       value={formData.subject}
-                      onValueChange={(value) => setFormData({ ...formData, subject: value })}
+                      onValueChange={(value) =>
+                        setFormData({ ...formData, subject: value })
+                      }
                     >
                       <SelectTrigger>
                         <SelectValue placeholder="What can we help with?" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="general">General Enquiry</SelectItem>
-                        <SelectItem value="custom">Custom Trip Request</SelectItem>
+                        <SelectItem value="custom">
+                          Custom Trip Request
+                        </SelectItem>
                         <SelectItem value="group">Group Travel</SelectItem>
                         <SelectItem value="press">Press / Media</SelectItem>
-                        <SelectItem value="partnership">Partnership Opportunity</SelectItem>
+                        <SelectItem value="partnership">
+                          Partnership Opportunity
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -201,16 +240,18 @@ const Contact = () => {
                     <Textarea
                       id="message"
                       value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, message: e.target.value })
+                      }
                       required
                       placeholder="Tell us about your dream journey..."
                       rows={6}
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-accent hover:bg-accent/90" 
+                  <Button
+                    type="submit"
+                    className="w-full bg-accent hover:bg-accent/90"
                     size="lg"
                   >
                     <Send className="mr-2 h-5 w-5" />
@@ -218,7 +259,8 @@ const Contact = () => {
                   </Button>
 
                   <p className="text-xs text-muted-foreground text-center">
-                    We respect your privacy and will never share your information.
+                    We respect your privacy and will never share your
+                    information.
                   </p>
                 </form>
               </Card>
